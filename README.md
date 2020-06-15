@@ -2,9 +2,9 @@
 
 Composition : 
 
-L'application est crée en 3 Micro Services
+L'application est crée en 3 Micro-Services
 
 Partie Back-End
 - sec-Service : Module de gestion des habilitations et des utilisateurs 
-- gestion-Credit : Module de gestion du crédit 
-
+- gestion-Crédit : Module de gestion du crédit 
+- gestion-Document : Module de gestion des Document lié a l'octroie de crédit ( éléments comptables)
