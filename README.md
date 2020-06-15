@@ -4,3 +4,7 @@ Composition :
 
 L'application est crée en 3 Micro Services
 
+Partie Back-End
+- sec-Service : Module de gestion des habilitations et des utilisateurs 
+- gestion-Credit : Module de gestion du crédit 
+
