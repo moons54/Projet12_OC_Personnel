@@ -18,4 +18,6 @@ public interface AccountService {
     public List<AppUser> loadAllUsers();
 
     public void addRoleToUser(String username, String rolename);
+
+
 }

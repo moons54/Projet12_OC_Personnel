@@ -32,7 +32,7 @@ public class EditionCreditServiceImpl implements EditionCreditService {
 
     @Override
     public Edition addEditionCredit(Edition edition) {
-        return null;
+        return editionRepository.save(edition);
     }
 
     @Override
@@ -42,6 +42,6 @@ public class EditionCreditServiceImpl implements EditionCreditService {
 
     @Override
     public Edition changementStatutEdition(Edition edition) {
-        return null;
+        return editionRepository.save(edition);
     }
 }

@@ -36,6 +36,7 @@ public class Credit implements Serializable {
     private String siretClient;
     private String montant;
     private String coutGlobal;
+   // private long user;
 
 
     @OneToOne

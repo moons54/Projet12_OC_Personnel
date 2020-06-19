@@ -22,11 +22,7 @@ public class SecServiceApplication {
         SpringApplication.run(SecServiceApplication.class, args);
     }
 
-
-
-
     //Nous injections la couche account service
-
     @Bean
     CommandLineRunner start(AccountService accountService) {
         return args -> {
@@ -38,13 +34,18 @@ public class SecServiceApplication {
             Stream.of("admin").forEach(u->{
                 accountService.saveUser(u,"123456","123456",
                         "paulson","robert","paulson.rob@gmail.com","myfrabriq",
-                        "543456143","°645361155","rue des tilleuils","95000","paris");
+                        "543456143","0645361155","rue des tilleuils","95000","paris");
             });
             accountService.addRoleToUser("admin","ADMIN");
+            Stream.of("barroom").forEach(u->{
+                accountService.saveUser(u,"123456","123456",
+                        "gilevitch","eric","gilet.er@gmail.com","Brasserie OPEN ROOM",
+                        "31144222100013","0645361534","14 rue des bosquet","95000","paris");
+            });
+            accountService.addRoleToUser("barroom","user");
         };
 
     }
-
 
     @Bean
     BCryptPasswordEncoder getBcpe(){

@@ -40,9 +40,9 @@ public class CreditWebApplication {
             ratiosRepository.deleteAll();
 
         //premier bilan test
-           File file = new File("/Users/aurelienmimouni/Downloads/gestion-doc/src/main/resources/document/Pro543255Tr.pdf");
-            String ref = "Pro456531Tr";
-            gestionDocumentService.addDoc(file,ref);
+        //   File file = new File("/Users/aurelienmimouni/Downloads/gestion-doc/src/main/resources/document/Pro543255Tr.pdf");
+          //  String ref = "Pro456531Tr";
+           // gestionDocumentService.addDoc(file,ref);
         //    File file1 = new File("/Users/aurelienmimouni/Downloads/gestion-doc/src/main/resources/document/liasse2all.pdf");
 
          //   gestionDocumentService.addDoc(file1);

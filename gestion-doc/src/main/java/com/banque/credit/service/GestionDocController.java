@@ -25,7 +25,8 @@ public class GestionDocController {
 
     @PostMapping(path = "/upload/{siret}")
     public void uploadDocument(MultipartFile file, @PathVariable String siret) throws Exception {
-        Files.write(Paths.get(System.getProperty("user.home")+"/Downloads/gestion-doc/src/main/resources/document/"+siret+".pdf"),file.getBytes());
+        Files.write(Paths.get(System.getProperty("user.home")+"/Documents/projet12_oc_Personnel/gestion-doc/src/main/resources/document/"+siret+".pdf"),file.getBytes());
+
     }
 
 

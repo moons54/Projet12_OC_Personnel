@@ -24,7 +24,6 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
-
         response.addHeader("Access-Control-Allow-Origin","*");
         response.addHeader("Access-Control-Allow-Headers","Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method,Acces-Control-Request-Headers,authorization");
         response.addHeader("Access-Control-Expose-Headers","Access-Control-Allow-Origin,Access-Control-Allow-Credentials,authorization");
@@ -37,7 +36,6 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
         }
         else {
             //On réccupère notre JWT
-
             String jwt = request.getHeader(SecurityPam.JWT_HEADER_NAME);
 
             //Nous effectuons les tests
@@ -47,6 +45,7 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
                 filterChain.doFilter(request, response);
                 return;
             }
+
             //on verifie la signature avec le codesecret
             JWTVerifier verifier = JWT.require(Algorithm.HMAC256(SecurityPam.SECRET)).build();
 

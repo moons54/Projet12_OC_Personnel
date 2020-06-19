@@ -84,8 +84,6 @@ public class GestionDocumentServiceImpl implements GestionDocumentService {
 
                 if(bilan!=null && resultat!=null) {
 
-
-
                     bilan.setResultat(resultat);
 
                 }
@@ -139,8 +137,6 @@ public class GestionDocumentServiceImpl implements GestionDocumentService {
             return st;
         }else {
             Integer st=0;
-
-
             return st;
         }
     }
@@ -198,20 +194,12 @@ public class GestionDocumentServiceImpl implements GestionDocumentService {
         soldeIntermediaireGestion.setResultatExploitation(resultatExploitation.toString());
 
         //RE  + reprise sur amortissement et provision - charges financiere
-        //  Integer chargesFinancieres = convertstring(resultat.getch)
         Integer resutatCourant = resultatExploitation;
         soldeIntermediaireGestion.setResultatcourant(resutatCourant.toString());
 
         Integer resultatExercice = resutatCourant;
         soldeIntermediaireGestion.setResultatExercice(resultatExercice.toString());
-
-
-        //resultat.setSoldeIntermediaireGestion(soldeIntermediaireGestion);
-
-
-        //soldeIntermediaireGestion.setResultat(resultat);
         soldeIntermediaireGestionRepository.save(soldeIntermediaireGestion);
-        // gestionResultatService.resultatRepository.save(resultat);
         resultat.setSoldeIntermediaireGestion(soldeIntermediaireGestion);
         gestionResultatService.resultatRepository.save(resultat);
 

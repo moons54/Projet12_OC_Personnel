@@ -4,9 +4,13 @@ import com.banque.credit.entities.AppUser;
 import com.banque.credit.service.AccountService;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Hashtable;
 import java.util.List;
+import java.util.Map;
 
 
 @RestController
@@ -37,6 +41,20 @@ public class UserController  {
                 userForm.getCodePostal(),
                 userForm.getVille());
     }
+
+    @GetMapping("user/{username}")
+    public AppUser affichebyusername(@PathVariable String username) {
+        return accountService.loadUserbyUserName(username);
+    }
+
+
+   /* @GetMapping("user/info")
+    public Map<String,Object> getUserInfo(@AuthenticationPrincipal OAuth2ResourceServerProperties.Jwt principal){
+     Map<String,String> map = new Hashtable<String, String>();
+     map.put("username",principal.getIssuerUri());
+    };
+*/
+
 
 
 }

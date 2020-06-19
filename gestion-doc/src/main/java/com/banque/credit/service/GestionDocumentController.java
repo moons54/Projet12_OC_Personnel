@@ -21,7 +21,7 @@ public class GestionDocumentController {
 
     @GetMapping("/analysedoc/{refdossier}")
     public Boolean analyseDocument(@PathVariable String refdossier) {
-        File file = new File("/Users/aurelienmimouni/Downloads/gestion-doc/src/main/resources/document/"+refdossier+".pdf");
+        File file = new File("/Users/aurelienmimouni/Documents/projet12_oc_Personnel/gestion-doc/src/main/resources/document/"+refdossier+".pdf");
        gestionDocumentService.addDoc(file,refdossier);
        return true;
     }

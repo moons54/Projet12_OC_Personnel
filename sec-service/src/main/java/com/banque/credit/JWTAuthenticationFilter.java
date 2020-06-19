@@ -2,8 +2,11 @@ package com.banque.credit;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.banque.credit.dao.AppUserRepository;
 import com.banque.credit.entities.AppUser;
+import com.banque.credit.service.AccountService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -37,7 +40,6 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
             return authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
                             ppUser.getUsername(),ppUser.getPassword()));
-
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException(e);
@@ -51,10 +53,12 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                                             FilterChain chain, Authentication authResult) throws IOException, ServletException {
 
         User user= (User) authResult.getPrincipal();
+
         List<String> role=new ArrayList<>();
         authResult.getAuthorities().forEach(r->{
             role.add(r.getAuthority());
         });
+
 
         //ON Créé un JWT
         String jwt= JWT.create()
@@ -65,6 +69,5 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
                 .sign(Algorithm.HMAC256(SecurityPam.SECRET));
         response.addHeader(SecurityPam.JWT_HEADER_NAME,jwt);
-
     }
 }

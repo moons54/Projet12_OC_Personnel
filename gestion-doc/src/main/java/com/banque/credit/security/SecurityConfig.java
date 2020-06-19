@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //toutes les autres entrée doivent être authentifé
         http.authorizeRequests().anyRequest().authenticated();
         //donne accées à toutes les entrées
-       //  http.authorizeRequests().anyRequest().permitAll();
+      http.authorizeRequests().anyRequest().permitAll();
 
         http.addFilterBefore(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);
     }

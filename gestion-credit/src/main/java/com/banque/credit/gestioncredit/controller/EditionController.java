@@ -34,4 +34,9 @@ public class EditionController {
     public Edition save(@RequestBody Edition edition) {
         return editionRepository.save(edition);
     }
+
+    @PutMapping("edition/update")
+    public Edition upade(@RequestBody Edition edition) {
+        return editionCreditService.changementStatutEdition(edition);
+    }
 }
