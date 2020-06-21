@@ -11,33 +11,31 @@ d'accelerer le processus d'octroi du credit demandé.
 Technologies
 -------------------
 
-Java EE
-Spring Boot
-Spring Security
-JWT 
-Tomcat 
-Maven
-Postgresql
-MongoDB
-Spring JPA
-Angular Cli
-Bootstrap
-Material UI
-Prime NG
-Pdfbox : https://pdfbox.apache.org/
+-Java EE
+-Spring Boot
+-Spring Security
+-JWT 
+-Tomcat 
+-Maven
+-Postgresql
+-MongoDB
+-Spring JPA
+-Angular Cli
+-Bootstrap
+-Material UI
+-Prime NG
+-Pdfbox : https://pdfbox.apache.org/
 
 
 logiciel d'aide a la conception 
 -------------------
-Visual paradigm (uml , wireframe, diagramme d'architecture)
-MongoDB compass ( client mongo db)
-Pgadmin
-IntelliJ IDEA
-Integration : Postman
-prezi viewer ( diaporama)
-GitHub
-
-
+-Visual paradigm (uml , wireframe, diagramme d'architecture)
+-MongoDB compass ( client mongo db)
+-Pgadmin
+-IntelliJ IDEA
+-Integration : Postman
+-prezi viewer ( diaporama)
+-GitHub
 
 
 Composition : 
@@ -100,17 +98,17 @@ Les identifiants de connexion
 -------------------
 
 **Admin:** 
-username : admin
-password : 123456
+-username : admin
+-password : 123456
 
 **User:**
-username : barroom
-password : 123456
+-username : barroom
+-password : 123456
 
 Deploiement de l'application 
 
 -Télécharger ou cloner le projet via Github
--installer les bases de données ( selon tableau ci dessus)
--telecharger : client postgres par exemple pgadmin 
+-Installer les bases de données ( selon tableau ci dessus)
+-Telecharger : client postgres par exemple pgadmin 
 
 
