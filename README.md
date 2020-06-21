@@ -11,31 +11,31 @@ d'accelerer le processus d'octroi du credit demandé.
 Technologies
 -------------------
 
--Java EE
--Spring Boot
--Spring Security
--JWT 
--Tomcat 
--Maven
--Postgresql
--MongoDB
--Spring JPA
--Angular Cli
--Bootstrap
--Material UI
--Prime NG
--Pdfbox : https://pdfbox.apache.org/
+- Java EE
+- Spring Boot
+- Spring Security
+- JWT 
+- Tomcat 
+- Maven
+- Postgresql
+- MongoDB
+- Spring JPA
+- Angular Cli
+- Bootstrap
+- Material UI
+- Prime NG
+- Pdfbox : https://pdfbox.apache.org/
 
 
 logiciel d'aide a la conception 
 -------------------
--Visual paradigm (uml , wireframe, diagramme d'architecture)
--MongoDB compass ( client mongo db)
--Pgadmin
--IntelliJ IDEA
--Integration : Postman
--prezi viewer ( diaporama)
--GitHub
+- Visual paradigm (uml , wireframe, diagramme d'architecture)
+- MongoDB compass ( client mongo db)
+- Pgadmin
+- IntelliJ IDEA
+- Integration : Postman
+- prezi viewer ( diaporama)
+- GitHub
 
 
 Composition : 
@@ -50,9 +50,9 @@ Partie Back-End
 - gestion-Document : Module de gestion des Document lié a l'octroi de crédit ( éléments comptables)
 
 Partie Front-End
--creditdigital : 
+- creditdigital : 
 
--Document : documentation de l'application, note d'intention.
+- Document : documentation de l'application, note d'intention.
 
 
 Environnement de développement :
@@ -61,9 +61,9 @@ Environnement de développement :
 
 Il comporte :
 
-une base de donnée PostgreSQL contenant un jeu de donnée dossier de credit (postgresql://127.0.0.1:9032/db_b_gestion_credit)
-une base de donnée MongoDB contenant un jeu de document ( liasse fiscale) (MongoDB://127.0.0.1::8087/catal)
-une base de donnée PostgresSQL contenant un jeu de donnée user (postgresql://127.0.0.1:9032/db_b_user)
+- une base de donnée PostgreSQL contenant un jeu de donnée dossier de credit (postgresql://127.0.0.1:9032/db_b_gestion_credit)
+- une base de donnée MongoDB contenant un jeu de document ( liasse fiscale) (MongoDB://127.0.0.1::8087/catal)
+- une base de donnée PostgresSQL contenant un jeu de donnée user (postgresql://127.0.0.1:9032/db_b_user)
 
 
 Lancement
@@ -98,17 +98,17 @@ Les identifiants de connexion
 -------------------
 
 **Admin:** 
--username : admin
--password : 123456
+- username : admin
+- password : 123456
 
 **User:**
--username : barroom
--password : 123456
+- username : barroom
+- password : 123456
 
 Deploiement de l'application 
 
--Télécharger ou cloner le projet via Github
--Installer les bases de données ( selon tableau ci dessus)
--Telecharger : client postgres par exemple pgadmin 
+- Télécharger ou cloner le projet via Github
+- Installer les bases de données ( selon tableau ci dessus)
+- Telecharger : client postgres par exemple pgadmin 
 
 
