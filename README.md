@@ -1,7 +1,39 @@
 #Projet P12 Application de Crédit digital aux professionnels
 
-Composition : 
 
+Description : 
+-------------------
+**Credit Web** : application ayant pour objectif de proposer une solution de crédit digitalisé pour les professionnels.
+Il s'agit d'un processus de crédit complet pour lequel la comptabilité cliente est numérisé puis digitalisé automatiquement afin 
+d'accelerer l'anaylse du credit demandé.
+
+
+Technologies
+-------------------
+
+Java EE
+Spring Boot
+Spring Security
+JWT 
+Tomcat 
+Maven
+Postgresql
+MongoDB
+Spring JPA
+
+logiciel d'aide a la conception 
+-------------------
+Visual paradigm (uml , wireframe, diagramme d'architecture)
+MongoDB compass ( client mongo db)
+Pgadmin
+IntelliJ IDEA
+Integration : Postman
+
+
+
+
+Composition : 
+-------------------
 Organisation du repertoire :
 
 L'application est crée en 3 Micro-Services
@@ -9,11 +41,14 @@ L'application est crée en 3 Micro-Services
 Partie Back-End
 - sec-Service : Module de gestion des habilitations et des utilisateurs 
 - gestion-Crédit : Module de gestion du crédit 
-- gestion-Document : Module de gestion des Document lié a l'octroie de crédit ( éléments comptables)
+- gestion-Document : Module de gestion des Document lié a l'octroi de crédit ( éléments comptables)
+
+-Document : documentation de l'application, note d'intention.
+
 
 Environnement de développement :
+-------------------
 
-Les composants nécessaires lors du développement sont disponibles via des conteneurs docker. L'environnement de développement est assemblé grâce à docker-compose (cf docker/dev/docker-compose.yml).
 
 Il comporte :
 
@@ -23,12 +58,14 @@ une base de donnée PostgresSQL contenant un jeu de donnée user (postgresql://1
 
 
 Lancement
+-------------------
 
 Vous trouverez un fichier structure de la base de données dans le répertoire script du repertoire racine  ainsi qu'un jeu de donnée:
 
 Le serveur PostgreSQL est configuré avec les paramètres par défaut : Host name/address : localhost Port : 5432 Username : Postgresql 
 
 Déploiement
+-------------------
 
 Créer 3 databases dans les conditions suivantes  :
 
@@ -46,5 +83,23 @@ enfin : saisir : use catal
 Nommer la database : db_b_gestion_credit et  db_b_user ( en respectant majuscule minuscule)
 
 Utiliser le compte par default postgres. Importer les fichiers SQL joints
+
+
+Les identifiants de connexion
+-------------------
+
+**Admin:** 
+username : admin
+password : 123456
+
+**User:**
+username : barroom
+password : 123456
+
+Deploiement de l'application 
+
+-Télécharger ou cloner le projet via Github
+-installer les bases de données ( selon tableau ci dessus)
+-telecharger : client postgres par exemple pgadmin 
 
 
