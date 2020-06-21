@@ -106,6 +106,7 @@ Les identifiants de connexion
 - password : 123456
 
 Deploiement de l'application 
+-------------------
 
 - Télécharger ou cloner le projet via Github
 - Installer les bases de données ( selon tableau ci dessus)
