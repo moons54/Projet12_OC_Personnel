@@ -3,9 +3,9 @@
 
 Description : 
 -------------------
-**Credit Web** : application ayant pour objectif de proposer une solution de crédit digitalisé pour les professionnels.
-Il s'agit d'un processus de crédit complet pour lequel la comptabilité cliente est numérisé puis digitalisé automatiquement afin 
-d'accelerer l'anaylse du credit demandé.
+**Credit Web** : application ayant pour objectif de proposer une solution de crédit digitalisée pour les professionnels.
+Il s'agit d'un processus de crédit complet pour lequel la comptabilité cliente est numérisée puis analyser automatiquement afin 
+d'accelerer le processus d'octroi du credit demandé.
 
 
 Technologies
@@ -20,6 +20,12 @@ Maven
 Postgresql
 MongoDB
 Spring JPA
+Angular Cli
+Bootstrap
+Material UI
+Prime NG
+Pdfbox : https://pdfbox.apache.org/
+
 
 logiciel d'aide a la conception 
 -------------------
@@ -28,6 +34,8 @@ MongoDB compass ( client mongo db)
 Pgadmin
 IntelliJ IDEA
 Integration : Postman
+prezi viewer ( diaporama)
+GitHub
 
 
 
@@ -42,6 +50,9 @@ Partie Back-End
 - sec-Service : Module de gestion des habilitations et des utilisateurs 
 - gestion-Crédit : Module de gestion du crédit 
 - gestion-Document : Module de gestion des Document lié a l'octroi de crédit ( éléments comptables)
+
+Partie Front-End
+-creditdigital : 
 
 -Document : documentation de l'application, note d'intention.
 
